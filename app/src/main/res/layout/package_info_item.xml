@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/pay_cart_list_item_coffee_img_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/coffee_info_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/pay_cart_list_item_coffee"
+            android:layout_width="74dp"
+            android:layout_height="46dp"
+            android:src="@drawable/buy_coffee_loading" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pay_cart_list_item_coffee_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pay_cart_list_item_coffee_price"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/pay_cart_list_item_coffee_img_parent"
+        android:ellipsize="end"
+        android:textColor="@color/norcolor"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/pay_cart_list_item_coffee_original_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:textColor="@color/redcolor"
+        android:textSize="18dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/pay_cart_list_item_coffee_img_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/pay_cart_list_item_coffee_img_parent"
+        android:background="@drawable/cartitembg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvCartPackageElementSugarHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/llCartPackageElementSugarContainer"
+            android:layout_alignRight="@+id/llCartPackageElementSugarContainer"
+            android:lines="1"
+            android:paddingLeft="15dp"
+            android:text="@string/coffee_info_nosugar_note"
+            android:textColor="@color/norcolor"
+            android:textSize="18dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/llCartPackageElementSugarContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvCartPackageElementName"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:lines="1"
+                android:text="@string/coffee_info_sugar_title"
+                android:textColor="@color/norcolor"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tvCartPackageElementSugarNum0"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@+id/tvCartPackageElementName"
+                android:background="@drawable/selector_sugar_num"
+                android:gravity="center"
+                android:text="@string/coffee_info_nosugar"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvCartPackageElementSugarNum1"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@+id/tvCartPackageElementSugarNum0"
+                android:background="@drawable/selector_sugar_num"
+                android:gravity="center"
+                android:text="@string/coffee_info_onesugar"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvCartPackageElementSugarNum2"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_marginRight="7dp"
+                android:layout_toRightOf="@+id/tvCartPackageElementSugarNum1"
+                android:background="@drawable/selector_sugar_num"
+                android:gravity="center"
+                android:text="@string/coffee_info_twosugar"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tvCartPackageElementSugarNum3"
+                android:layout_width="60dp"
+                android:layout_height="27dp"
+                android:layout_toRightOf="@+id/tvCartPackageElementSugarNum2"
+                android:background="@drawable/selector_sugar_num"
+                android:gravity="center"
+                android:text="@string/coffee_info_threesugar"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

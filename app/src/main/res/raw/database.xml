@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<database name="vendor" version="1" namespace="false" >
+  <cache active="true" type="LRU" size="5" />
+  <include file="appset" source="raw"/>
+  <include file="coffeeindent" source="raw"/>
+</database>

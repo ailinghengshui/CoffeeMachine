@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mapers namespace="coffeeindent" >    
+    
+    <insert
+        id="insertCoffeeIndent"
+        parameterClass="com.jingye.coffeemac.domain.CoffeeIndent"
+        >
+	    <![CDATA[ 
+      	insert or replace into coffeeindent (    
+           coffeeindent,
+           coffeeid,
+           dosing,
+     	   status)
+           values(
+           #coffeeindent#,
+           #coffeeid#,
+           #dosing#,
+     	   #status#
+           )  
+		]]>
+	</insert>
+	
+    <update
+        id="updateCoffeeIndentStatus"
+        parameterClass="com.jingye.coffeemac.domain.CoffeeIndent" >
+		<![CDATA[ 
+	       UPDATE coffeeindent set  
+	           status=#status#
+	           where coffeeindent=#coffeeindent# and coffeeid=#coffeeid#
+	     ]]>
+    </update>
+	
+    <select
+        id="getCoffeeIndent"
+        parameterClass="com.jingye.coffeemac.domain.CoffeeIndent"
+        returnClass="com.jingye.coffeemac.domain.CoffeeIndent"
+        >   
+		<![CDATA[ 
+			SELECT * FROM coffeeindent WHERE coffeeindent=#coffeeindent# and coffeeid=#coffeeid#
+
+	    ]]>
+    </select>
+
+</mapers>

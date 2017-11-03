@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="14dp">
+
+    <TextView
+        android:id="@+id/tvAddDialogTitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="left|top"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp">
+
+        <LinearLayout
+            android:id="@+id/addStock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddDialogName1"
+                style="@style/dialog_addstock_name"
+                android:text="一号"
+                 />
+
+            <EditText
+                android:id="@+id/etAddDialogValue1"
+                style="@style/dialog_addstock_value"
+                />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：g"
+                />
+
+            <TextView
+                android:id="@+id/tvAddDialogHint1"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addStock2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addStock1"
+            android:layout_alignTop="@id/addStock1"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/addStock1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddDialogName2"
+                style="@style/dialog_addstock_name"
+                android:text="二号"
+                />
+
+            <EditText
+                android:id="@+id/etAddDialogValue2"
+                style="@style/dialog_addstock_value" />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：g"/>
+            <TextView
+                android:id="@+id/tvAddDialogHint2"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addStock3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addStock1"
+            android:layout_alignRight="@id/addStock1"
+            android:layout_below="@id/addStock1"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddDialogName3"
+                style="@style/dialog_addstock_name"
+                android:text="三号"
+                />
+
+            <EditText
+                android:id="@+id/etAddDialogValue3"
+                style="@style/dialog_addstock_value" />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：g"
+                />
+            <TextView
+                android:id="@+id/tvAddDialogHint3"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addStock4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addStock3"
+            android:layout_alignTop="@id/addStock3"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/addStock3"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddDialogName4"
+                style="@style/dialog_addstock_name"
+                android:text="四号"/>
+
+            <EditText
+                android:id="@+id/etAddDialogValue4"
+                style="@style/dialog_addstock_value" />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：g" />
+            <TextView
+                android:id="@+id/tvAddDialogHint4"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addStock5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/addStock3"
+            android:layout_alignRight="@id/addStock3"
+            android:layout_below="@id/addStock3"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddDialogName5"
+                style="@style/dialog_addstock_name"
+                android:text="五号"
+                />
+
+
+            <EditText
+                android:id="@+id/etAddDialogValue5"
+                style="@style/dialog_addstock_value" />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：g" />
+            <TextView
+                android:id="@+id/tvAddDialogHint5"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                /> />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addStock6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addStock5"
+            android:layout_alignTop="@id/addStock5"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/addStock5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAddDialogName9"
+                style="@style/dialog_addstock_name"
+                android:text="九号"
+                />
+
+            <EditText
+                android:id="@+id/etAddDialogValue9"
+                style="@style/dialog_addstock_value"
+                />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：g" />
+            <TextView
+                android:id="@+id/tvAddDialogHint9"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvAddDialogTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="top|left"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="14dp">
+
+        <LinearLayout
+            android:id="@+id/addStock7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/dialog_addstock_name"
+                android:text="杯子存量" />
+
+            <EditText
+                android:id="@+id/etAddDialogCupValue"
+                style="@style/dialog_addstock_value"
+                 />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/dialog_addstock_unit"
+                android:text="单位：个" />
+
+            <TextView
+                android:id="@+id/tvAddDialogHintCupValue"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addStock8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/addStock7"
+            android:layout_alignTop="@id/addStock7"
+            android:layout_marginLeft="27dp"
+            android:layout_toRightOf="@+id/addStock7"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/dialog_addstock_name"
+                android:text="水存储量" />
+
+            <EditText
+                android:id="@+id/etAddDialogWaterValue"
+                style="@style/dialog_addstock_value" />
+
+            <TextView
+                style="@style/dialog_addstock_unit"
+                android:text="单位：ml" />
+            <TextView
+                android:id="@+id/tvAddDialogHintWaterValue"
+                style="@style/dialog_addstock_hint"
+                android:text="位数正确？"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="225dp"
+            android:layout_height="54dp"
+            android:background="@drawable/selector_green_medium_circ_rec_click"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/white"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="225dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="27dp"
+            android:background="@drawable/selector_green_medium_circ_rec_click"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

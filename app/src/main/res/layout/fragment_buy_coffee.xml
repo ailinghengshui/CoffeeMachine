@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/home_loading_anim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@anim/anim_home_loading"
+        android:contentDescription="@string/empty" />
+
+    <ImageView
+        android:id="@+id/home_reload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/home_reload_selector"
+        android:contentDescription="@string/empty"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="56dp"
+            android:orientation="horizontal">
+
+            <com.jingye.coffeemac.ui.MarqueeTextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="走马灯效果"
+                android:textColor="#7b3500"
+                android:textSize="30dp"
+                android:visibility="invisible" />
+
+
+            <Button
+                android:id="@+id/btnCoffee"
+                android:layout_width="100dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/selector_home_page_filter_circ_rec_click"
+                android:text="@string/str_single_coffee"
+                android:textSize="16dp"
+                />
+
+            <Button
+                android:id="@+id/btnCoffees"
+                android:layout_width="100dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/selector_home_page_filter_circ_rec_click"
+                android:enabled="false"
+                android:text="@string/str_multiple_coffees"
+                android:textSize="16dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.jingye.coffeemac.ui.ViewFlipper
+                android:id="@+id/myFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/page_indicator_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/page_indicator_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/home_page_up_selector" />
+
+                <RadioGroup
+                    android:id="@+id/page_indicator_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"></RadioGroup>
+
+                <ImageView
+                    android:id="@+id/page_indicator_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/empty"
+                    android:src="@drawable/home_page_down_selector" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

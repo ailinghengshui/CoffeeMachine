@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:background="@drawable/home_background">
+
+	<include
+		layout="@layout/home_title_layout" />
+
+	<LinearLayout
+		android:layout_width="420dp"
+		android:layout_height="wrap_content"
+		android:background="@drawable/loginbg"
+		android:layout_gravity="center_horizontal"
+		android:gravity="center_horizontal"
+		android:layout_marginTop="113dp"
+		android:orientation="vertical">
+		<TextView
+			android:id="@+id/login_titleinfo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/login_coffee_info"
+			android:textSize="32dp"
+			android:gravity="center"
+			android:paddingTop="28dp"
+			android:paddingBottom="29dp"
+			android:textColor="#000000"/>
+		<RelativeLayout
+			android:layout_width="320dp"
+			android:layout_height="54dp"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:background="@drawable/loginbg_up">
+
+			<com.jingye.coffeemac.ui.ClearableEditText
+				android:id="@+id/login_account"
+				android:singleLine="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:nextFocusDown="@+id/login_password"
+				android:hint="@string/login_coffee_machine_id_hint"
+				android:background="@null"
+				android:inputType="text"
+				android:layout_marginRight="4dp"
+				android:textColorHint="@color/black"
+				android:textSize="20dp"
+				/>
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="320dp"
+			android:layout_height="54dp"
+			android:layout_centerVertical="true"
+			android:gravity="center"
+			android:background="@drawable/loginbg_down">
+
+			<com.jingye.coffeemac.ui.ClearableEditText
+				android:id="@+id/login_password"
+				android:singleLine="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textColor="#000000"
+				android:nextFocusDown="@+id/entrance_login"
+				android:hint="@string/login_coffee_machine_pwd_hint"
+				android:background="@null"
+				android:inputType="textPassword"
+				android:layout_gravity="center_vertical"
+				android:layout_marginRight="4dp"
+				android:textColorHint="@color/black"
+				android:textSize="20dp" />
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/login_errhint"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="16dp"
+			android:paddingTop="30dp"
+			android:paddingBottom="13dp"
+			android:textColor="@color/redcolor"
+			android:layout_gravity="center_horizontal"
+			android:visibility="invisible"
+			/>
+		<Button
+			android:id="@+id/entrance_login"
+			android:layout_width="320dp"
+			android:layout_height="42dp"
+			android:gravity="center"
+			android:background="@drawable/selector_green_small_circ_rec_click"
+			android:text="@string/login_coffee_info_login"
+			android:textColor="@android:color/white"
+			android:textSize="20dp"
+			android:layout_marginBottom="24dp"
+			/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+    
+    <include layout="@layout/home_title_layout" />
+    
+	<LinearLayout
+	    android:id="@+id/pay_content_area"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+		android:background="@color/transparent" 
+		android:orientation="vertical">
+		
+	    <RelativeLayout 
+		    android:id="@+id/indicator_bar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="15dp">
+			
+		    <ImageView 
+		        android:id="@+id/pay_qrcode_back_btn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="39dp"
+		        android:contentDescription="@string/empty"
+		        android:src="@drawable/pay_back_selector"/>
+		        
+		    <TextView 
+			    android:id="@+id/pay_qrcode_timer" 
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:layout_marginLeft="10dp"
+			    android:layout_toRightOf="@id/pay_qrcode_back_btn"
+				android:textColor="@color/norcolor"
+			    android:textSize="24dp"/>
+	
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/pay_coffee_info_area"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="80dp"
+			android:layout_marginTop="10dp">
+
+
+			<ImageView
+				android:id="@+id/pay_coffee_qrcode"
+				android:layout_width="180dp"
+				android:layout_height="180dp"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:background="@drawable/white_medium_circ_rec"
+				android:contentDescription="@string/empty"
+				android:padding="14dp"
+				android:visibility="invisible"/>
+
+			<RelativeLayout
+				android:id="@+id/pay_coffee_detail_linear"
+				android:layout_width="320dp"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="28dp"
+				android:layout_toRightOf="@id/pay_coffee_qrcode">
+
+				<TextView
+					android:id="@+id/pay_coffee_detail_totoal_price_title"
+					android:layout_width="170dp"
+					android:layout_height="wrap_content"
+					android:gravity="center_vertical|left"
+					android:padding="3dp"
+					android:text="@string/pay_qrcode_detail_total_price_title"
+					android:textColor="@color/norcolor"
+					android:textSize="30dp"
+					android:visibility="gone"/>
+				<TextView
+					android:id="@+id/pay_coffee_detail_totoal_price"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_toRightOf="@+id/pay_coffee_detail_totoal_price_title"
+					android:gravity="center_vertical|left"
+					android:padding="3dp"
+					android:textColor="@color/norcolor"
+					android:textSize="30dp"
+					android:visibility="gone"/>
+				<ImageView
+					android:id="@+id/pay_coffee_detail_totoal_price_img"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_totoal_price_title"
+					android:src="@drawable/qrlinebg"
+					android:visibility="gone"/>
+				<TextView
+					android:id="@+id/pay_coffee_detail_favor_title"
+					android:layout_width="170dp"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_totoal_price_img"
+					android:gravity="center_vertical|left"
+					android:padding="3dp"
+					android:text="@string/pay_qrcode_detail_favor_title"
+					android:textColor="@color/norcolor"
+					android:textSize="30dp"
+					android:visibility="gone"/>
+				<TextView
+					android:id="@+id/pay_coffee_detail_favor"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_totoal_price_img"
+					android:layout_toRightOf="@+id/pay_coffee_detail_favor_title"
+					android:gravity="center_vertical|left"
+					android:padding="3dp"
+					android:textColor="@color/norcolor"
+					android:textSize="30dp"
+					android:visibility="gone"/>
+				<ImageView
+					android:id="@+id/pay_coffee_detail_favor_img"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_favor_title"
+					android:src="@drawable/qrlinebg"
+					android:visibility="gone"/>
+				<TextView
+					android:id="@+id/pay_coffee_detail_actual_pay_title"
+					android:layout_width="170dp"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_favor_img"
+					android:gravity="center_vertical|left"
+					android:padding="5dp"
+					android:text="@string/pay_qrcode_detail_actual_pay_title"
+					android:textColor="@color/norcolor"
+					android:textSize="30dp"
+					android:visibility="gone"/>
+				<TextView
+					android:id="@+id/pay_coffee_detail_actual_pay"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_favor_img"
+					android:layout_toRightOf="@+id/pay_coffee_detail_actual_pay_title"
+					android:gravity="center_vertical|left"
+					android:padding="1dp"
+					android:textColor="@color/redcolor"
+					android:textSize="40dp"
+					android:visibility="gone"/>
+				<ImageView
+					android:id="@+id/pay_coffee_detail_actual_pay_img"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_actual_pay_title"
+					android:src="@drawable/qrlinebg"
+					android:visibility="gone"/>
+				<TextView
+					android:id="@+id/pay_coffee_process_tip_title"
+					android:layout_width="170dp"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_actual_pay_img"
+					android:gravity="center_vertical|left"
+					android:padding="3dp"
+					android:text="@string/pay_pay_title"
+					android:textColor="@color/norcolor"
+					android:textSize="30dp"
+					android:visibility="gone"
+					/>
+				<TextView
+					android:id="@+id/pay_coffee_process_tip"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/pay_coffee_detail_actual_pay_img"
+					android:layout_toRightOf="@+id/pay_coffee_process_tip_title"
+					android:ellipsize="end"
+					android:gravity="center_vertical|left"
+					android:padding="3dp"
+					android:singleLine="true"
+					android:textColor="@color/redcolor"
+					android:textSize="30dp"/>
+
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/pay_coffee_operation_tip"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="40dp"
+			android:gravity="center"
+			android:textColor="#f4a727"
+			android:textSize="40dp"/>
+	</LinearLayout>
+	
+</LinearLayout>

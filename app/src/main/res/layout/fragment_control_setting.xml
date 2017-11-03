@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="160dp"
+    android:gravity="center_horizontal"
+    >
+
+    <Button
+        android:id="@+id/btnControlSettingBackstage"
+        android:layout_width="267dp"
+        android:layout_height="94dp"
+        android:background="@drawable/selector_green_big_circ_rec_click"
+        android:gravity="center"
+        android:text="进入后台"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rlControlSettingDriveUpdate"
+        android:layout_width="267dp"
+        android:layout_height="94dp"
+        android:layout_alignBottom="@+id/btnControlSettingBackstage"
+        android:layout_alignTop="@+id/btnControlSettingBackstage"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/btnControlSettingBackstage"
+        >
+        <Button
+            android:id="@+id/btnControlSettingDriveUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_green_big_circ_rec_click"
+            android:gravity="center"
+            android:text="驱动固件版本"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/icon_red_dot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlControlSettingMainControlUpdate"
+        android:layout_width="267dp"
+        android:layout_height="94dp"
+        android:layout_alignBottom="@+id/rlControlSettingDriveUpdate"
+        android:layout_alignTop="@+id/rlControlSettingDriveUpdate"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/rlControlSettingDriveUpdate"
+        >
+        <Button
+            android:id="@+id/btnControlSettingMainControlUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_green_big_circ_rec_click"
+            android:gravity="center"
+            android:text="主控板固件版本"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/icon_red_dot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlControlSettingUpdate"
+        android:layout_width="267dp"
+        android:layout_height="94dp"
+        android:layout_alignLeft="@+id/btnControlSettingBackstage"
+        android:layout_alignRight="@+id/btnControlSettingBackstage"
+        android:layout_below="@+id/btnControlSettingBackstage"
+        android:layout_marginTop="27dp"
+        >
+        <Button
+            android:id="@+id/btnControlSettingUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_green_big_circ_rec_click"
+            android:gravity="center"
+            android:text="在线升级"
+            android:textColor="@color/white"
+            android:textSize="32dp"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/icon_red_dot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnSettingCoffeeExit"
+        android:layout_width="267dp"
+        android:layout_height="94dp"
+        android:layout_alignBottom="@id/rlControlSettingUpdate"
+        android:layout_alignTop="@id/rlControlSettingUpdate"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/rlControlSettingUpdate"
+        android:background="@drawable/selector_green_big_circ_rec_click"
+        android:gravity="center"
+        android:text="咖啡机退出登录"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/btnSettingLogout"
+        android:layout_width="267dp"
+        android:layout_height="94dp"
+        android:layout_alignBottom="@+id/btnSettingCoffeeExit"
+        android:layout_alignTop="@+id/btnSettingCoffeeExit"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/btnSettingCoffeeExit"
+        android:background="@drawable/selector_green_big_circ_rec_click"
+        android:gravity="center"
+        android:text="用户退出登录"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        />
+
+    <Button
+        android:id="@+id/btnSetting"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+        android:layout_below="@+id/btnSettingLogout"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/selector_green_big_circ_rec_click"
+        android:gravity="center"
+        android:text="设置清洗时间"
+        android:textColor="@color/white"
+        android:textSize="32dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

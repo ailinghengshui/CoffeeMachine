@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/easy_edit_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/easy_alert_dialog_title" />
+
+    <TextView
+        android:id="@+id/easy_dialog_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="@dimen/easy_dialog_message_font_size"
+        android:textColor="#333333"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/control_add_dosing_dialog_padding">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="密码："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/management_text_font_size"/>
+
+            <EditText
+                android:id="@+id/control_verify_password"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/management_edit_text_h"
+                android:layout_marginLeft="@dimen/management_edit_margin_left"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/login_font_size"
+                android:paddingLeft="10dp"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:textColorHint="@color/grey"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/easy_alert_dialog_bottom_button" />
+
+</LinearLayout>

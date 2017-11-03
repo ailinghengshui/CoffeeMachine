@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/easy_edit_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/easy_alert_dialog_title" />
+
+    <TextView
+        android:id="@+id/easy_dialog_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:textSize="@dimen/easy_dialog_message_font_size"
+        android:textColor="#333333"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/easy_dialog_message_margin" >
+        
+        <LinearLayout
+            android:id="@+id/easy_alert_dialog_text_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        
+    </RelativeLayout>
+
+    <include
+        layout="@layout/easy_alert_dialog_bottom_button" />
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="106dp"
+    android:layout_marginBottom="14dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/control_user_bg"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/user_img"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/userimg" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/user_img"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="18dp"
+        >
+
+        <TextView
+            android:id="@+id/user_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:text="管理员"
+            android:textColor="@color/white"
+            android:layout_marginBottom="14dp"
+            android:ellipsize="end"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_hint"
+            android:layout_alignTop="@+id/user_hint"
+            android:layout_alignBottom="@+id/user_hint"
+            android:lines="1"
+            android:textColor="@color/white"
+            android:ellipsize="end"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_marginTop="14dp"
+            android:id="@+id/user_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="咖啡机管理员"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

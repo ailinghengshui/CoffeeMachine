@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="160dp"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlManagerControlSettingDrive"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+        >
+        <Button
+            android:id="@+id/btnManagerControlSettingDrive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_green_big_circ_rec_click"
+            android:text="驱动板固件版本"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_red_dot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlManagerControlSettingMainControl"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+        android:layout_toRightOf="@id/rlManagerControlSettingDrive"
+        android:layout_marginLeft="27dp"
+        android:layout_alignTop="@+id/rlManagerControlSettingDrive"
+        android:layout_alignBottom="@+id/rlManagerControlSettingDrive"
+        >
+        <Button
+            android:id="@+id/btnManagerControlSettingMainControl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:background="@drawable/selector_green_big_circ_rec_click"
+            android:text="主控板固件版本"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_red_dot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+    
+
+    <Button
+        android:id="@+id/btnSettingExit"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+        android:background="@drawable/selector_green_big_circ_rec_click"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:text="用户退出登录"
+        android:textColor="@color/white"
+        android:layout_below="@+id/rlManagerControlSettingDrive"
+        android:layout_marginTop="27dp"
+        android:layout_alignLeft="@+id/rlManagerControlSettingDrive"
+        android:layout_alignRight="@+id/rlManagerControlSettingDrive"
+        />
+    <RelativeLayout
+        android:id="@+id/rlManagerControlSettingUpdate"
+        android:layout_toRightOf="@id/btnSettingExit"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+
+        android:layout_marginLeft="27dp"
+        android:layout_alignTop="@+id/btnSettingExit"
+        android:layout_alignBottom="@+id/btnSettingExit"
+        >
+        <Button
+            android:id="@+id/btnManagerControlSettingUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="32dp"
+            android:textColor="@color/white"
+            android:text="在线升级"
+            android:gravity="center"
+            android:background="@drawable/selector_green_big_circ_rec_click"
+            />
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/icon_red_dot"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btnSettingLogout"
+        android:layout_width="400dp"
+        android:layout_height="94dp"
+        android:background="@drawable/selector_green_big_circ_rec_click"
+        android:textSize="32dp"
+        android:gravity="center"
+        android:text="设置清洗时间"
+        android:textColor="@color/white"
+        android:layout_below="@+id/btnSettingExit"
+        android:layout_marginTop="27dp"
+        android:layout_alignLeft="@+id/btnSettingExit"
+        android:layout_alignRight="@+id/btnSettingExit"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

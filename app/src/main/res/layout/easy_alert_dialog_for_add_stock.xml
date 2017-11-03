@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/easy_edit_dialog_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    android:paddingBottom="20dp">
+
+    <include
+        layout="@layout/easy_alert_dialog_title" />
+
+    <TextView
+        android:id="@+id/easy_dialog_message_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textColor="#333333"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="一号料盒："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no1_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_g"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="二号料盒："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no2_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_g"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="三号料盒："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no3_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_g"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="四号料盒："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no4_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_g"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="五号料盒："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no5_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_g"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="九号料盒："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no9_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_no9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_g"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="杯子存量："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_cupnum_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_cupnum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_num"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/management_setting_item_margin"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_height="40dp"
+                android:layout_width="120dp"
+                android:text="水&#12288;&#12288;量："
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textColor="#b26847"
+                android:background="@drawable/material_box_bg"/>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/control_add_dosing_water_original"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:layout_weight="1.0"
+                    android:enabled="false"/>
+
+                <EditText
+                    android:id="@+id/control_add_dosing_water"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/material_box_edit_bg"
+                    android:layout_marginLeft="@dimen/management_edit_margin_left"
+                    android:gravity="left|center_vertical"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#666666"
+                    android:textColorHint="#666666"
+                    android:hint="@string/login_add_dosing_by_ml"
+                    android:layout_weight="1.0"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/easy_alert_dialog_bottom_button" />
+
+</LinearLayout>

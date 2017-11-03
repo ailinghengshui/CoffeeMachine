@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="870dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCheckInTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="left|top"
+        android:text="常规内容"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@color/line_color" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:id="@+id/checkInDefault1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="意式浓缩称重"
+                android:textColor="@color/dark_orange"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/etCheckInDefaultCount1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="5"
+                android:nextFocusRight="@+id/etCheckInDefaultCount2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checkInDefault2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="总杯盖数"
+                android:textColor="@color/dark_orange"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/etCheckInDefaultCount2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="5"
+                android:nextFocusRight="@+id/etCheckInDefaultCount3"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checkInDefault3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="总杯托数"
+                android:textColor="@color/dark_orange"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/etCheckInDefaultCount3"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:hint="0"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

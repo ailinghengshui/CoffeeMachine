@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/transparent" 
+	android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="454dp"
+            android:layout_marginLeft="135dp"
+            android:background="@drawable/digits_panel_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.jingye.coffeemac.ui.DigitsEditText
+                android:id="@+id/fetch_coffee_input_edit"
+                android:layout_width="234dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="74dp"
+                android:background="@drawable/input_digits_panel_edit_bg"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:hint="@string/fetch_input_edit_hint"
+                android:maxLines="1"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="#00a762"
+                android:textColorHint="#e000a762"
+                android:textSize="@dimen/fetch_coffee_input_font_size"/>
+
+            <include layout="@layout/input_digits_panel"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fetch_coffee_qrcode_layout"
+            android:layout_width="320dp"
+            android:layout_height="454dp"
+            android:layout_marginLeft="135dp"
+            android:background="@drawable/digits_panel_background"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/fetch_coffee_input_margin"
+                android:layout_marginTop="74dp"
+                android:gravity="center"
+                android:text="@string/fetch_coffee_qrcode_tip"
+                android:textColor="#00a762"
+                android:textSize="24dp"/>
+
+            <ImageView
+                android:id="@+id/fetch_coffee_qrcode"
+                android:layout_width="194dp"
+                android:layout_height="194dp"
+                android:layout_marginTop="66dp"
+                android:background="@drawable/white_medium_circ_rec"
+                android:contentDescription="@string/empty"
+                android:padding="10dp"
+                android:visibility="visible"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

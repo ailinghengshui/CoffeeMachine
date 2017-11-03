@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="870dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvCheckInTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="left|top"
+        android:text="作业内容"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/line_color"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

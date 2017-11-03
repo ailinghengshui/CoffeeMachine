@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/home_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/bglogin_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bglogin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="43dp"
+            android:contentDescription="@string/empty"
+            android:src="@drawable/pay_back_selector_normal"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/loginbg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/bglogin_titleinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="29dp"
+            android:paddingTop="28dp"
+            android:text="@string/bglogin_coffee_info"
+            android:textColor="#000000"
+            android:textSize="32dp"/>
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/loginbg_up"
+            android:gravity="center">
+
+            <com.jingye.coffeemac.ui.ClearableEditText
+                android:id="@+id/bglogin_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="@null"
+                android:hint="@string/bglogin_coffee_machine_id_hint"
+                android:inputType="text"
+                android:nextFocusDown="@+id/bglogin_password"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="@color/black"
+                android:textSize="20dp"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="54dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/loginbg_down"
+            android:gravity="center">
+
+            <com.jingye.coffeemac.ui.ClearableEditText
+                android:id="@+id/bglogin_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                android:background="@null"
+                android:hint="@string/bglogin_coffee_machine_pwd_hint"
+                android:inputType="textPassword"
+                android:nextFocusDown="@+id/entrance_bglogin"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/bglogin_errhint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="13dp"
+            android:paddingTop="30dp"
+            android:textColor="@color/redcolor"
+            android:textSize="16dp"
+            android:visibility="invisible"
+            />
+        <Button
+            android:id="@+id/entrance_bglogin"
+            android:layout_width="320dp"
+            android:layout_height="42dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/selector_green_small_circ_rec_click"
+            android:gravity="center"
+            android:text="@string/login_coffee_info_login"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+</LinearLayout>

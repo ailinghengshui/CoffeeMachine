@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rycleSignUp"
+        android:layout_width="934dp"
+        android:layout_height="391dp"
+        android:fadeScrollbars="false"
+        android:paddingLeft="14dp"
+        android:paddingRight="4dp"
+        android:paddingTop="14dp"
+        android:scrollbarSize="16dp"
+        android:scrollbarThumbVertical="@drawable/thumb_scrollbar"
+        android:scrollbars="vertical"></android.support.v7.widget.RecyclerView>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="240dp"
+            android:layout_height="43dp"
+            android:background="@drawable/selector_green_small_circ_rec_click"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            />
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_marginLeft="27dp"
+            android:layout_width="240dp"
+            android:layout_height="43dp"
+            android:background="@drawable/selector_green_small_circ_rec_click"
+            android:text="确定"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            />
+
+    </LinearLayout>
+</LinearLayout>

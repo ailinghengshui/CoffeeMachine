@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="900dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvCheckInTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="left|top"
+        android:text="常规内容"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@color/line_color" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSignUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="意式浓缩称重"
+            android:textColor="@color/dark_orange"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvSignUp2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="总杯盖数"
+            android:textColor="@color/dark_orange"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvSignUp3"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="总杯托数"
+            android:textColor="@color/dark_orange"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+</LinearLayout>

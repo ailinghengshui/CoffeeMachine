@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--common-->
+    <dimen name="network_status_bar_height">96dp</dimen>
+    <dimen name="easy_dialog_width">500dp</dimen>
+    <dimen name="easy_dialog_horizontal_divider_height">6dp</dimen>
+    <dimen name="easy_dialog_title_font_size">24.0dp</dimen>
+    <dimen name="easy_dilaog_title_padding">10.0dp</dimen>
+    <dimen name="easy_dialog_message_font_size">48.0dp</dimen>
+    <dimen name="easy_dialog_message_margin">40.0dp</dimen>
+    <dimen name="easy_dialog_edit_font_size">48.0dp</dimen>
+    <dimen name="easy_dialog_bottom_button_split_width">8dp</dimen>
+    <dimen name="easy_dialog_bottom_button_font_size">22dp</dimen>
+    <dimen name="easy_dialog_bottom_button_padding">10dp</dimen>
+    <dimen name="toast_font_size">40dp</dimen>
+    <dimen name="toast_padding">20dp</dimen>
+    <!-- login -->
+    <dimen name="login_title_bar_height">96.0dp</dimen>
+    <dimen name="login_title_bar_title_font_size">45.0dip</dimen>
+    <dimen name="login_title_bar_btn_w">100.0dp</dimen>
+    <dimen name="login_font_size">38.0dp</dimen>
+    <dimen name="login_content_padding">35dp</dimen>
+    <dimen name="login_content_margin_top">15dp</dimen>
+    <dimen name="login_btn_height">96.0dp</dimen>
+    <!-- welcome -->
+	<dimen name="welcome_logo_margin_bottom">100dp</dimen>
+	<dimen name="welcome_app_download_qrcode_space">92dp</dimen>
+	<dimen name="welcome_app_qrcode_size">280dp</dimen>
+	<dimen name="welcome_app_qrcode_tip_w">280dp</dimen>
+	<dimen name="welcome_app_qrcode_tip_h">82dp</dimen>
+	<dimen name="welcome_enter_btn_size">280dp</dimen>
+	<dimen name="welcome_enter_margin_right">180dp</dimen>
+    <dimen name="welcome_enter_margin_bottom">280dp</dimen>
+	<!-- home -->
+    <dimen name="home_indicator_bar_height">96.0dp</dimen>
+    <dimen name="home_back_btn_size">80.0dp</dimen>
+    <dimen name="home_indicator_btn_size">80.0dp</dimen>
+    <dimen name="home_indicator_tip_font_size">48.0dp</dimen>
+    <dimen name="home_grid_item_img_padding">20dp</dimen>
+    <dimen name="home_grid_item_font_size">32.0dp</dimen>
+    <dimen name="home_grid_item_font_big_size">38.0dp</dimen>
+    <dimen name="home_title_bar_height">96dp</dimen>
+    <dimen name="home_title_bar_icon_width">208dp</dimen>
+    <dimen name="home_title_bar_icon_height">72dp</dimen>
+    <dimen name="home_title_bar_icon_margin_left">30dp</dimen>
+    <dimen name="home_title_bar_title_font_size">28.0dp</dimen>
+	<!-- coffee info -->
+    <dimen name="coffee_info_img_width">384.0dp</dimen>
+    <dimen name="coffee_info_img_height">222.0dp</dimen>
+    <dimen name="coffee_info_name_font_size">48.0dp</dimen>
+    <dimen name="coffee_info_add_no_sugar_size">64dp</dimen>
+    <dimen name="coffee_info_add_sugar_little_size">92dp</dimen>
+    <dimen name="coffee_info_add_sugar_middle_size">120dp</dimen>
+    <dimen name="coffee_info_add_sugar_more_size">148dp</dimen>
+    <dimen name="coffee_info_divider_width">100.0dp</dimen>
+    <dimen name="coffee_info_divider_height">2.0dp</dimen>
+    <dimen name="coffee_info_payment_width">240dp</dimen>
+    <dimen name="coffee_info_payment_height">120dp</dimen>
+    <dimen name="coffee_info_margin_top">40dp</dimen>
+    <dimen name="coffee_info_margin_bottom">20dp</dimen>
+	<!-- pay coffee -->
+    <dimen name="pay_coffee_timer_font_size">48.0dp</dimen>
+    <dimen name="pay_coffee_operation_instruction_width">700dp</dimen>
+    <dimen name="pay_coffee_operation_instruction_height">380dp</dimen>
+    <dimen name="pay_qrcode_size">300dp</dimen>
+    <dimen name="pay_qrcode_margin_top">96dp</dimen>
+    <dimen name="pay_qrcode_discount_font_size">48.0dp</dimen>
+    <dimen name="pay_qrcode_price_font_size">40.0dp</dimen>
+	<!-- make coffee -->
+    <dimen name="make_coffee_animation_width">315dp</dimen>
+    <dimen name="make_coffee_animation_height">525dp</dimen>
+	<!-- fetch coffee -->
+    <dimen name="fetch_coffee_input_tip_font_size">28dp</dimen>
+    <dimen name="fetch_coffee_input_margin">20dp</dimen>
+    <dimen name="fetch_coffee_qrcode_tip_margin_top">50dp</dimen>
+	<dimen name="fetch_coffee_grid_size">75.0dp</dimen>
+	<dimen name="fetch_coffee_grid_sure_height">150.0dp</dimen>
+	<dimen name="fetch_coffee_grid_space">3.0dp</dimen>
+	<dimen name="fetch_coffee_input_panel_height">72dp</dimen>
+	<dimen name="fetch_coffee_input_panel_width">306dp</dimen>
+	<dimen name="fetch_coffee_input_font_size">28.0dp</dimen>
+	<dimen name="fetch_coffee_qrcode_size">250.0dp</dimen>
+	<dimen name="fetch_coffee_qrcode_margin_top">32.0dp</dimen>
+	<!-- management -->
+	<dimen name="management_text_font_size">30.0dp</dimen>
+	<dimen name="management_edit_text_h">72.0dp</dimen>
+	<dimen name="management_setting_item_margin">5dp</dimen>
+	<dimen name="management_edit_margin_left">20dp</dimen>
+	<dimen name="management_edit_font_size">35.0dp</dimen>
+	<!-- control -->
+	<dimen name="control_navi_item_height">120dp</dimen>
+	<dimen name="control_navi_item_font_size">48.0dp</dimen>
+	<dimen name="control_add_dosing_area_margin">32.0dp</dimen>
+	<dimen name="control_add_dosing_item_margin">32.0dp</dimen>
+	<dimen name="control_add_dosing_item_space">72.0dp</dimen>
+	<dimen name="control_add_dosing_item_font_size">50.0dp</dimen>
+	<dimen name="control_test_area_margin">32.0dp</dimen>
+	<dimen name="control_test_item_font_size">40.0dp</dimen>
+    <dimen name="control_add_dosing_dialog_padding">50dp</dimen>
+    <!-- help -->
+    <dimen name="help_come_soon_font_size">100.0dp</dimen>
+    <dimen name="help_instruction_level1_font_size">48.0dp</dimen>
+    <dimen name="help_instruction_level2_font_size">42.0dp</dimen>
+</resources>

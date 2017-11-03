@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="54dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:id="@+id/tvCheckInDesc"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="32dp"
+        android:textSize="20dp"
+        android:textColor="@color/dark_orange"
+        android:lines="1"
+        android:ellipsize="end"
+        />
+    <com.jingye.coffeemac.ui.SwitchButton
+        android:id="@+id/sbCheckInContent"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        app:kswAnimationDuration="300"
+        app:kswBackDrawable="@drawable/ios_back_drawable"
+        app:kswBackMeasureRatio="1.67"
+        app:kswThumbDrawable="@drawable/thumb_switch_button"
+        />
+
+</LinearLayout>

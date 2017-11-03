@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="empty">empty</string>
+
+    <!-- welcome -->
+    <string name="welcome_start_wash_machine">Cleaning coffee machine</string>
+    <string name="welcome_wash_machine_fail">Clean coffee machine fail</string>
+    <string name="welcome_wash_machine_success">Clean coffee machine success</string>
+
+    <!-- network change -->
+    <string name="network_connecting">Connecting&#8230;</string>
+    <string name="network_connect_failed">No Connect</string>
+    <string name="network_no_connect">No Network</string>
+    <string name="network_server_is_not_available">Failed to connect to the server and will try to connect to the server later</string>
+    <string name="network_is_not_available">Network connection failed, please check your network settings</string>
+    <string name="network_forbidden_login">You are forbidden to log on by the server，Please ask customer service</string>
+    <string name="network_failed_unavailable">Failed to connect to the server and will try to connect to the server later</string>
+
+    <!-- home -->
+    <string name="home_coffee_machine_no">NO.%s</string>
+    <string name="home_discount_reduction">Welcome to Jijia coffee！Promotion period a discount of %1$s full %2$s minus %3$s！</string>
+    <string name="home_discount_only">Welcome to Jijia coffee！Promotion period a discount of %s！</string>
+    <string name="home_reduction_only">Welcome to Jijia coffee！ Promotion period expires %1$s minus %2$s！</string>
+
+    <!-- fetch && exchange -->
+    <string name="fetch_coffee_qrcode_tip">Coffee Me\nAPP Scan Code</string>
+    <string name="fetch_input_edit_hint">Pickup Code</string>
+    <string name="fetch_is_requesting">Sorry,Is to pick up, do not repeat the request</string>
+    <string name="verify_code_is_null">Sorry,verifycode is empty</string>
+    <string name="exchange_code_is_null">Sorry,exchangecode is empty</string>
+    <string name="exchange_is_requesting">Sorry,Is to exchange, do not repeat the request</string>
+
+    <!-- exchange -->
+    <string name="exchange_input_edit_hint">Redeem Code</string>
+
+    <!--coffee info-->
+    <string name="coffee_info_volume_format">%dML</string>
+    <string name="coffee_info_sugar_note">Automatically add sugar</string>
+    <string name="coffee_info_sweet_note">Drinks without sugar is sweet</string>
+    <string name="coffee_info_nosugar_note">This product can not add sugar</string>
+    <string name="coffee_info_price">Discount price：</string>
+    <string name="coffee_info_oriprice">Price：</string>
+    <string name="coffee_info_notice">Tip：</string>
+    <string name="coffee_info_sugar_title">Add sugar</string>
+    <string name="coffee_info_num_title">Purchase quantity</string>
+    <string name="coffee_info_nosugar">0</string>
+    <string name="coffee_info_onesugar">1x</string>
+    <string name="coffee_info_twosugar">2x</string>
+    <string name="coffee_info_threesugar">3x</string>
+
+    <!-- pay -->
+    <string name="add_sugar_tip">add suger</string>
+    <string name="pay_add_no_sugar">Suger x0</string>
+    <string name="pay_add_little_sugar">Suger x1</string>
+    <string name="pay_add_middle_sugar">Suger x2</string>
+    <string name="pay_add_more_sugar">Suger x3</string>
+    <string name="pay_timer_tip">%dS</string>
+    <string name="pay_timer_tip_left">(%dS)</string>
+    <string name="pay_request_qrcode">Requesting a two-dimensional code</string>
+    <string name="pay_generate_qrcode">Generating two-dimensional code</string>
+    <string name="pay_waiting_scan">To be paid</string>
+    <string name="pay_pay_success">Pay Success</string>
+    <string name="pay_pay_title">State</string>
+    <string name="pay_qrcode_price">¥%s</string>
+    <string name="pay_coffee_price_format">¥%s</string>
+    <string name="pay_cart_total_label">Price</string>
+    <string name="pay_cart_actual_label">Order total</string>
+    <string name="pay_cart_favor_submeet_label">Full</string>
+    <string name="pay_cart_favor_discount_label">Discount</string>
+    <string name="pay_cart_price_format">¥%s</string>
+    <string name="pay_cart_total_price_format">¥%s</string>
+    <string name="pay_cart_no_drinks_to_pay">There is no drink in the shopping cart</string>
+    <string name="pay_cart_stock_insufficient">Material is not enough, can not continue to add coffee</string>
+    <string name="pay_favour_tip">total¥%1$.2f - discount¥%2$.2f - full¥%3$.2f  </string>
+    <string name="pay_favour_tip_discount">total¥%1$.2f - discount¥%2$.2f</string>
+    <string name="pay_favour_tip_meetsub">total¥%1$.2f - full¥%2$.2f</string>
+    <string name="pay_actual_pay">pay¥%.2f</string>
+    <string name="pay_qrcode_detail_tip">reduction¥%1$.2f, pay¥%2$.2f</string>
+    <string name="pay_qrcode_detail_tip_no_favour">pay¥%.2f</string>
+    <string name="pay_qrcode_detail_total_price_title">Total</string>
+    <string name="pay_qrcode_detail_favor_title">Discount</string>
+    <string name="pay_qrcode_detail_actual_pay_title">OrderTotal</string>
+    <string name="pay_qrcode_error_norecipe">Could not get the Coffee Recipe</string>
+    <string name="pay_qrcode_ali_info">The use of Alipay payment scan code</string>
+    <string name="pay_qrcode_wx_info">The use of Wxpay payment scan code</string>
+    <string name="pay_qrcode_abc_info">The use of e-ABCPay payment scan code</string>
+
+    <!-- cart -->
+    <string name="cart_exceeds_max_num">One can buy up to 9 cups</string>
+    <string name="cart_total_price">¥%.2f</string>
+    <string name="cart_favour_discount">-¥%.2f</string>
+    <string name="cart_favour_meetsub">-¥%.2f</string>
+    <string name="cart_actual_pay">¥%.2f</string>
+    <string name="cart_total_num">%dcup</string>
+    <string name="cart_sugar">Add sugar</string>
+    <string name="cart_num">Number</string>
+
+    <!-- make coffee -->
+    <string name="make_coffee_prepare">Please wait while making...</string>
+    <string name="make_coffee_failed">Production failure,refund within 24 hours </string>
+    <string name="make_coffee_retry">Your drinks have not been removed. Please take the cup and try again.</string>
+    <string name="make_coffee_successful_and_continue">%s has been completed\nplease pick up the goods will automatically produce a drink</string>
+    <string name="make_coffee_successful_all">Drinks are all successful, please enjoy</string>
+    <string name="make_coffee_cart_status">%1$s is making\n%2$d are still in line</string>
+    <string name="make_coffee_status">is making, please be patient</string>
+    <string name="make_coffee_user_cancel">Beverage production has been canceled, the production of drinks will be refunded within 24 hours</string>
+    <string name="make_coffee_status_making">Is making, please be patient</string>
+    <string name="make_coffee_status_successful_all">Drinks are all finished, welcome to buy again!</string>
+    <string name="make_coffee_status_fail_local">Sorry,Coffee production failure，Refund within 24 hours！</string>
+    <string name="make_coffee_status_fail_fetch">Sorry，Coffee production failed, please choose retry or refund on APP！</string>
+    <string name="make_coffee_order_is_null">Order list is empty！</string>
+    <string name="make_coffee_cart_makeing">Making...</string>
+    <string name="make_coffee_cart_makefail">Make Fail</string>
+    <string name="make_coffee_fetchcup">The customer forget to take the cup \n please take a cup and then continue to</string>
+    <string name="make_coffee_finish_fetchcup">is complete \n please take the cup from the bottom of the window</string>
+    <string name="make_coffee_finish_desk_fetchcup">is complete \n please take the cup and place an empty one</string>
+    <string name="make_coffee_noopen">When making coffee,please do not take the cup</string>
+
+    <!-- error code -->
+    <string name="exchange_error_no_coffeeindent">Sorry,No coffee order</string>
+    <string name="exchange_error_have_fetch">Sorry，Order has been taken</string>
+    <string name="exchange_error_system">Sorry，System error</string>
+    <string name="exchange_error_no_pay">Sorry，Order not paid</string>
+    <string name="exchange_error_drawback">Sorry，Order has been refunded</string>
+    <string name="exchange_error_dosing_not_enough">Sorry，Insufficient ingredient</string>
+    <string name="exchange_error_default">Sorry，Unknown error</string>
+    <string name="exchange_error_have_fetch_by_other_mac">Sorry，Order has been taken</string>
+    <string name="exchange_error_cant_exchange">Sorry，exchange code is unable to pick up on this machine</string>
+    <string name="exchange_error_exceed">Sorry，Redemption code has expired</string>
+    <string name="exchange_error_timeout">Sorry，Rollback time exceeds security thresh</string>
+    <string name="exchange_error_fetchcode">Sorry，You enter the pickup code, please switch to pick up activity</string>
+    <string name="exchange_error_exchangecode">Sorry，You entered the exchange code, please switch to the exchange activity</string>
+    <string name="exchange_error_lowstocks">Sorry，Inadequate inventory</string>
+    <string name="exchange_error_netorlogin">Sorry，Service not available</string>
+
+    <string name="pay_error_waiting_pay">Wait pay</string>
+    <string name="pay_error_cancel_indent">Transaction is closed</string>
+    <string name="pay_error_timeout">Request a two-dimensional code timeout, please try again</string>
+    <string name="pay_no_coupon">Promotion cup number balance is insufficient, please reduce the number of buying</string>
+    <string name="pay_restore_price">Promotion is over, please wait for the system to restore the price</string>
+    <string name="help_instruction_no">machine number:</string>
+    <string name="error_code">Error code: </string>
+    <string name="locked">LOCKED</string>
+    <string name="str_place_cup">place you cup and press continue button</string>
+
+    <string name="str_single_coffee">Drinks</string>
+    <string name="str_multiple_coffees">Combos</string>
+
+    <string name="str_cart_pay_package_element_name">%s add sugar</string>
+    <string name="str_cart">Cart</string>
+    <string name="str_add_to_cart">Add To Cart</string>
+    <string name="str_add_cart">Add To Cart</string>
+    <string name="str_ali_pay">Alipay</string>
+    <string name="str_wechat_pay">WeChat Pay</string>
+    <string name="str_abc_pay">e-ABCPay</string>
+    <string name="string_heating">Heating...</string>
+    <string name="exchange_error_validate_timeout">fetch code validate timeout</string>
+    <string name="str_make_coffee_thumb_up">Give us a thumb-up please ~</string>
+    <string name="str_make_coffee_satisfied">Satisfied</string>
+    <string name="str_make_coffee_keep_up">Keep-up</string>
+    <string name="str_make_coffee_thumb_dowm">Unsatisfied</string>
+    <string name="str_make_coffee_commented" >You have already commented!!!</string>
+    <string name="str_make_coffee_thanks_for_comment" >Thanks for your comments, we are keeping up!</string>
+
+
+</resources>

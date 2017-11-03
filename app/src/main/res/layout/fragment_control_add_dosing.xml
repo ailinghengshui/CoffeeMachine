@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <include layout="@layout/add_dosing_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/control_add_stock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/login_init_stock_btn_selector"
+                android:text="@string/control_update_dosing"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/login_font_size"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/control_reset_stock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_weight="1"
+                android:background="@drawable/login_init_stock_btn_selector"
+                android:text="@string/control_reset_dosing"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/login_font_size"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

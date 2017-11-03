@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的图片 -->
+    <item android:drawable="@drawable/big_buy_coffee_background" android:state_pressed="false"/>
+    <!-- 选择时的图片 -->
+    <item android:drawable="@drawable/big_buy_coffee_background_hover" android:state_pressed="true"/>
+</selector>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/transparent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical">
+
+		<LinearLayout
+			android:layout_width="318dp"
+			android:layout_height="429dp"
+			android:orientation="vertical"
+			android:gravity="center"
+			android:layout_marginLeft="270dp"
+			android:background="@drawable/digits_panel_background">
+
+			<com.jingye.coffeemac.ui.DigitsEditText
+				android:id="@+id/exchange_input_edit"
+				android:layout_width="234dp"
+				android:layout_height="60dp"
+				android:background="@drawable/input_digits_panel_edit_bg"
+				android:layout_marginBottom="20dp"
+				android:paddingLeft="8dp"
+				android:paddingRight="8dp"
+				android:gravity="center"
+				android:textSize="@dimen/fetch_coffee_input_font_size"
+				android:textColor="#00a762"
+				android:textColorHint="#e000a762"
+				android:hint="@string/exchange_input_edit_hint"
+				android:maxLines="1"
+				android:singleLine="true"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:scrollHorizontally="true"
+				android:focusableInTouchMode="true"
+				android:cursorVisible="false"/>
+
+			<include layout="@layout/input_digits_panel"/>
+
+		</LinearLayout>
+
+
+	</LinearLayout>
+
+</LinearLayout>

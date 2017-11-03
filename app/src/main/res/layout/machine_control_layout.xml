@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/machine_control_background">
+
+	<RelativeLayout
+		android:id="@+id/machine_control_titlebar"
+		android:layout_width="fill_parent"
+		android:layout_height="75dp"
+		android:layout_alignParentTop="true"
+		android:orientation="horizontal"
+		android:background="@drawable/machine_control_title_background">
+
+		<ImageView
+			android:id="@+id/home_title_logo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:background="@drawable/control_title_logo"/>
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="horizontal"
+		android:baselineAligned="false">
+
+		<FrameLayout
+			android:id="@+id/control_navi_fragment"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="4.0"/>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0">
+
+			<FrameLayout
+				android:id="@+id/add_dosing_fragment"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="visible" />
+
+			<FrameLayout
+				android:id="@+id/machine_debug_fragment"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="gone" />
+
+			<FrameLayout
+				android:id="@+id/other_fragment"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="gone" />
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+</LinearLayout>

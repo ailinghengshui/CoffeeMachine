@@ -1,0 +1,106 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <style name="easy_dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+	
+	<style name="progressStyle">
+        <item name="android:maxWidth">48.0dip</item>
+        <item name="android:maxHeight">48.0dip</item>
+        <item name="android:indeterminateDrawable">@drawable/progress_loading_white</item>
+        <item name="android:minWidth">48.0dip</item>
+        <item name="android:minHeight">48.0dip</item>
+    </style>
+    
+	 <style name="dialog_style" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/sdk_share_dialogue_bg</item>
+    </style>
+    
+	 <style name="dialog_title_text_style">
+        <item name="android:textSize">@dimen/easy_dialog_title_font_size</item>
+        <item name="android:textColor">#b26847</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">@dimen/easy_dilaog_title_padding</item>
+        <item name="android:paddingRight">@dimen/easy_dilaog_title_padding</item>
+        <item name="android:paddingTop">@dimen/easy_dilaog_title_padding</item>
+        <item name="android:paddingBottom">@dimen/easy_dilaog_title_padding</item>
+    </style>
+    
+    <style name="green_bottom_line_edit_text_with_length_dialog_style" parent="@android:style/Widget.EditText">
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/green_edit_text_bg</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">30dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    
+    <style name="dialog_button_text_style">
+        <item name="android:textSize">@dimen/easy_dialog_bottom_button_font_size</item>
+        <item name="android:textColor">#4f3f35</item>
+        <item name="android:background">#e0dfdb</item>
+        <item name="android:paddingTop">@dimen/easy_dialog_bottom_button_padding</item>
+        <item name="android:paddingBottom">@dimen/easy_dialog_bottom_button_padding</item>
+    </style>
+
+	<style name="NoTitle" parent="android:Theme">
+		<item name="android:windowNoTitle">true</item> 
+	</style>
+
+    <style name="mypopwindow_anim_style">
+
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowEnterAnimation">@anim/anim_popupwindow_show</item>
+
+        <!-- 指定消失的动画xml -->
+        <item name="android:windowExitAnimation">@anim/anim_popupwindow_hide</item>
+    </style>
+
+    <style name="dialog_addstock_name">
+        <item name="android:layout_width">174dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/bg_dosing</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_orange</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="dialog_addstock_value">
+        <item name="android:layout_width">104dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/bg_input_view</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+
+    </style>
+
+    <style name="dialog_addstock_unit">
+        <item name="android:layout_width">95dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:background">@drawable/bg_input_view</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="dialog_addstock_hint">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">54dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/redcolor</item>
+        <item name="android:textSize">9dp</item>
+
+    </style>
+
+</resources>

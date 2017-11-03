@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/transparent">
+
+    <ImageView
+        android:id="@+id/ivhelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fragment_help_tips"
+        android:contentDescription="@string/empty"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"/>
+
+    <TextView
+        android:layout_alignBottom="@+id/ivhelp"
+        android:layout_alignLeft="@+id/ivhelp"
+        android:id="@+id/fragment_help_mac_no"
+        android:layout_gravity="bottom"
+        android:layout_width="200dp"
+        android:layout_height="43dp"
+        android:background="@drawable/help_mac_no_bg"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="15dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/ivCartPackageItemIconContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="@drawable/coffee_info_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivCartPackageItemIcon"
+            android:layout_width="74dp"
+            android:layout_height="46dp"
+            android:src="@drawable/buy_coffee_loading"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlCartPackageItemIconContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/ivCartPackageItemIconContainer">
+
+        <TextView
+            android:id="@+id/tvCartPackagePackageItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:lines="1"
+            android:text="卡布奇诺"
+            android:textColor="@color/norcolor"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvCartPackagePackageItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvCartPackagePackageItemName"
+            android:layout_alignParentRight="true"
+            android:text="原价：12.56"
+            android:textColor="@color/redcolor"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tvCartPackagePackageItemOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvCartPackagePackageItemName"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/tvCartPackagePackageItemPrice"
+            android:text="优惠价：12.56"
+            android:textColor="@color/norcolor"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <com.jingye.coffeemac.ui.CartPayPackageGroup
+        android:id="@+id/grpPayPackage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/rlCartPackageItemIconContainer"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ivCartPackageItemIconContainer"
+        android:background="@drawable/circ_rec_little_orange"
+        >
+    </com.jingye.coffeemac.ui.CartPayPackageGroup>
+
+</RelativeLayout>

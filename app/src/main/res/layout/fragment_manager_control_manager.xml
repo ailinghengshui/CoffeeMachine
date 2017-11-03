@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="34dp"
+    android:layout_marginTop="20dp">
+
+
+    <LinearLayout
+        android:id="@+id/llManagerMalfunctionRepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/icon_problem_repair" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="故障修复"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llManagerAllCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/llManagerMalfunctionRepair"
+        android:layout_marginLeft="74dp"
+        android:layout_alignTop="@+id/llManagerMalfunctionRepair"
+        android:layout_alignBottom="@+id/llManagerMalfunctionRepair"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/icon_all_check" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="全检"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llManagerCoffeeTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/llManagerAllCheck"
+        android:layout_marginLeft="74dp"
+        android:layout_alignTop="@+id/llManagerAllCheck"
+        android:layout_alignBottom="@+id/llManagerAllCheck"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/icon_coffee_test1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="意式浓缩测试"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llManagerCoffeeTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/llManagerCoffeeTest1"
+        android:layout_marginLeft="74dp"
+        android:layout_alignTop="@+id/llManagerCoffeeTest1"
+        android:layout_alignBottom="@+id/llManagerCoffeeTest1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/icon_coffee_test2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="打饮料测试"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llManagerCoffeeWait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/llManagerCoffeeTest2"
+        android:layout_marginLeft="74dp"
+        android:layout_alignTop="@+id/llManagerCoffeeTest2"
+        android:layout_alignBottom="@+id/llManagerCoffeeTest2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:src="@drawable/icon_wait" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置维护模式"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

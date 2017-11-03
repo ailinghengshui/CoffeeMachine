@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_background"
+    android:orientation="vertical" >
+
+    <include
+        layout="@layout/home_title_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="70dp"
+            android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <RadioGroup
+                android:id="@+id/tabs_home_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RadioButton
+                    android:id="@+id/tab_buy_coffee_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="51dp"
+                    android:background="@drawable/home_tab_buy_hot_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:id="@+id/tab_buy_coffee_fetch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/home_tab_fetch_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:id="@+id/tab_buy_coffee_exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/home_tab_exchange_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:id="@+id/tab_buy_coffee_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="41dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/home_tab_help_selector"
+                    android:button="@null"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:singleLine="true"/>
+
+            </RadioGroup>
+            <FrameLayout
+                android:id="@+id/coffee_shopping_cart_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+                <ImageView
+                    android:id="@+id/coffee_shopping_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/coffee_shopping_cart_icon"/>
+                <TextView
+                    android:id="@+id/coffee_shopping_cart_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/badge_bg"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </FrameLayout>
+        </LinearLayout>
+            <FrameLayout
+                android:id="@+id/tab_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:background="@color/transparent"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/home_title_horn_linear"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom">
+            <View
+                android:id="@+id/home_title_horn_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/norcolor" />
+            <ImageView
+                android:id="@+id/home_title_horn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/home_title_horn_icon" />
+
+            <com.jingye.coffeemac.ui.MarqueeTextView
+                android:id="@+id/home_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="27.5dp"
+                android:layout_toRightOf="@+id/home_title_horn"
+                android:singleLine="true"
+                android:text="欢迎光临极伽时光！"
+                android:textColor="@color/norcolor"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

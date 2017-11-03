@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="27dp"
+    >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ahklghah"
+        android:textSize="24dp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="59dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/pbProgress"
+        android:layout_width="280dp"
+        android:layout_height="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/customprogressbar"
+        android:max="100"
+        android:layout_below="@+id/tvTitle"
+        />
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pbProgress"
+        android:layout_marginTop="44dp"
+        android:id="@+id/btnCancel"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:textSize="15dp"
+        android:text="fakfha"
+        android:layout_marginBottom="27dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/selector_green_small_circ_rec_click"
+
+        />
+</RelativeLayout>
